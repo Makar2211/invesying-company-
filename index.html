@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment company</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <div class="container" id="root">
+        <navbar @click="toModalVerbs"></navbar>
+       
+
+        <main>
+            <div class="make">
+                <div class="img"><img src="img/img.jpg" alt=""></div>
+                <div class="make-wealth">
+                    <h1 class="make-wealth_header">Make wealth <br> your own.</h1>
+                    <div class="make-wealth_subheader"><span>Personalized, Automated, Effortless <br> Investing and Savings.</span></div>
+                    <custom-button style="width: 150px; ">Start investing</custom-button>
+                </div>
+                
+            </div>
+            <div class="make-footer">
+                    <div class="make-footer_item">
+                        <div class="img"><img src="img/top1.svg" alt=""></div>
+                        <span>Best Robo-advisor, 2019 <br> Best Cash Management App, 2020</span>
+                    </div>
+                    <div class="make-footer_item">
+                        <div class="img"><img src="img/top2.svg" alt=""></div>
+                        <span>Best Robo-advisor, 2020</span>
+                    </div>
+                    <div class="make-footer_item">
+                        <div class="img"><img src="img/top3.svg" alt=""></div>
+                        <span>Trusted clients</span>
+                    </div>
+                    <div class="make-footer_item">
+                        <div class="img"><img src="img/top4.svg" alt=""></div>
+                        <span>In client funds</span>
+                    </div>
+                    <div class="make-footer_item">
+                        <div class="img">4.9<img src="img/top5.svg" alt=""></div>
+                        <span>Google App Store</span>
+                    </div>
+                    <div class="make-footer_item">
+                        <div class="img">4.5<img src="img/top5.svg" alt=""></div>
+                        <span>Google Play Store</span>
+                    </div>
+            </div>
+
+            <div class="investing">
+                <div class="investing-first">
+                    <h2 class="investing-first_header">Investing <br> isn’t easy. <br> We just <br> make it feel <br> that way.</h2>
+                    <span>Let us customize a portfolio just for you or build <br>it yourself, and our powerful automation will <br> make the most of your investments, optimizing <br> your performance and helping lower your taxes.</span>
+                    <div class="investing-first_btns">
+                        <custom-button style="width: 150px; margin-right: 50px;">Start investing</custom-button>
+                        <span>Learn more</span>
+                    </div>
+                </div>
+                <div class="investing-second">
+                    <img src="img/img2.jpg" alt="">
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <div class="modal" v-if="isModalVerbs">
+            <form action="send.php" method="post">
+                <h2 class="modal-header">Мы свяжемся с вами <br> в блийшее время</h2>
+            <div class="close" @click="toModalVerbs"><img src="img/сlose.svg" alt="close"></div>
+            <input type="text" name="fio" placeholder="Укажите ФИО" required>
+            <input type="tel"  name="tel" placeholder="Укажите телефон" required>
+            <input type="text" name="email" placeholder="Укажите e-mail" required>
+            <custom-button type="submit" style="margin-top: 10px;">Отправить</custom-button>
+            </form>
+        </div>
+      
+         
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
