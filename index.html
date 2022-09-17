@@ -64,15 +64,105 @@
                 </div>
             </div>
 
+
+            <div class="cash">
+                <div class="img">
+                    <img src="img/cash.png" alt="">
+                </div>
+
+                
+                <div class="information">
+                    <div class="information-header">Everyday cash, <br> designed to <br> build <br> long-term <br> wealth.</div>
+                    <div class="information-subheader">Our Cash account, offered with Green Dot Bank, lets <br> you automate your savings, so you can pay bills, <br> withdraw from 19,000+ ATMs, and invest your extra <br> cash in seconds to keep building your future.</div>
+                    <custom-button style="width: 150px; margin-right: 50px;">Start saving</custom-button>
+                    <span>Learn more</span>
+                </div>
+            </div>
+
+
+            <div class="saving">
+                <div class="information">
+                    <div class="information-header">Saving and <br> investing. <br> All while  <br> you’re <br> relaxing.</div>
+                    <div class="information-subheader">Tell us what you’re saving for, and we’ll automatically <br> set aside extra cash to hit your goals. And since we <br> connect with all your accounts, you only need one <br> app to watch your wealth grow.</div>
+                </div>
+                <div class="saving-img">
+                    <img src="img/savingimg.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="single">
+                <div class="single-bloks">
+                    <a href="">Testimonial</a>
+                    <div class="single-bloks-text"><span>It's the single <br> best</span> resource for <br> both investing, <br> managing <br> retirement and <br> seeing my entire <br> financial picture.</div>
+                    <div class="single-bloks-autor">Joshua B</div>
+
+                </div>
+                <div class="single-bloks">
+                    <a href="">Testimonial</a>
+                    <div class="single-bloks-text"><span>Wealthfront</span> is the <br> first thing in my <br> life that actually <br> motivated me to <br> save money.</div>
+                    <div class="single-bloks-autor">Isidore</div>
+                </div>
+                <div class="single-bloks">
+                    <a href="">Testimonial</a>
+                    <div class="single-bloks-text"><span>It’s automatic,</span> <br> and I’m lazy.</div>
+                    <div class="single-bloks-autor">Ryan</div>
+                </div>
+            </div>
+
+
+            <div class="people">
+                <div class="img"><img src="img/peopletop.png" alt=""></div>
+                <div class="people-header">Over <span>450,000</span> people are <br> already using Wealthfront to <br> earn more and worry less</div>
+                <custom-button style="display: block; margin: 0 auto; margin-top: 48px;">Get started</custom-button>
+                <div class="people-subheader"><a href="#">As featured in</a></div>
+                <div class="people-icons">
+                    <img src="img/people1.png" alt="">
+                    <img src="img/people2.png" alt="">
+                    <img src="img/people3.png" alt="">
+                    <img src="img/people4.png" alt="">
+                    <img src="img/people5.png" alt="">
+                </div>
+            </div>
+
         </main>
 
         <footer>
+            <div class="footer">
+                <div class="img"><img src="img/logof.png" alt=""></div>
+
+                <div class="footer-right">
+                    <ul>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Help center</a></li>
+                        <li><a href="">Homeownership</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="">Legal</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">College</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="">Methodology</a></li>
+                        <li><a href="">Planning</a></li>
+                        <li><a href="">Our PhD Team</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Retirement</a></li>
+                        <li><a href="">Back to top</a></li>
+                    </ul>
+                </div>
+            </div>
 
         </footer>
 
         <div class="modal" v-if="isModalVerbs">
             <form action="send.php" method="post">
-                <h2 class="modal-header">Мы свяжемся с вами <br> в блийшее время</h2>
+            <h2 class="modal-header">Мы свяжемся с вами <br> в блийшее время</h2>
             <div class="close" @click="toModalVerbs"><img src="img/сlose.svg" alt="close"></div>
             <input type="text" name="fio" placeholder="Укажите ФИО" required>
             <input type="tel"  name="tel" placeholder="Укажите телефон" required>
